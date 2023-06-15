@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI  Option 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>This is my user interface <br> Please input your details</h1>
+    
+    <div>
+       <label for="firstname"> First Name</label>
+       <input type="text" id="firstname" placeholder="Your First name"> <br>
+       <label for="lastname"> Last Name </label>
+       <input type="text" id="lastname" placeholder="Your Last name"> <br>
+       <label for="food">Favourite Food</label>
+       
+     <select id="food" name="food">
+      <option value="chicken">Chicken</option>
+      <option value="beef">Beef</option>
+      <option value="pork">Pork</option>
+      <option value="lamb">Lamb</option>
+     </select> <br>
+     <button id="btn" onclick="funtions()">Submit</button>
+    </div>
+    <script>
+    function funtions() {
+        var firstname = document.getElementById("firstname").value;
+        var lastname = document.getElementById("lastname").value;
+        var food = document.getElementById("food").value;
+
+        var message = "Your name is: " + firstname + lastname +"\n And your favourite food is: " + food;
+        alert(message)
+    }
+
+    </script>
+    <h2>Click the submit button to wake the alarm message</h2>
+</body>
+</html>
